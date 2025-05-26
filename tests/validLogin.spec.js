@@ -7,7 +7,7 @@ test('homepage', async({page})=> {
 
  //verify homepage is visible
  const image = page.locator("img[alt='Website for automation practice']")
- await expect ('image').toBeVisible
+ await expect (image).toBeVisible()
 
  //verify successful login
  await page.waitForLoadState('domcontentloaded')
